@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: wheat;
+}
+.navbar ul li a:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0,0,10px gray;
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+
+}
+#home ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('bg.jpg') no-repeat center center/cover;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.heading{
+    color: whitesmoke;
+    font-size: 3rem;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    transform: scale(1,1,3);
+}
+#home a{
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid black;
+    color: whitesmoke;
+    font-size: 17px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#home a:hover{
+    background-color: black;
+    color: yellowgreen;
+    box-shadow: 0,0,10px gray;
+    font-weight: bold;
+
+}
+/* #portfolio
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#portfoli h1{
+    margin: 60px;
+}
+.gallery{
+    background-color: #000000dc;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery img{
+    height: 640px;
+    width: 360px;
+    padding: 10px;
+    margin: 10px;
+}
+.gallery img:hover{
+background-color:whitesmoke;
+cursor: pointer;
+} */
+#education{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#education h1{
+    margin: 60px;
+}
+.colomn{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.box{
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2{
+    color: yellowgreen;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.box p{
+    font-size: 16px;
+    color: whitesmoke;
+}
+#about
+{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+#about h1{
+    margin: 55px;
+    color: black;
+}
+.about{
+    display: flex;
+}
+.about img{
+    width: 500px;
+    height: 400px;
+    padding: 0px 30px;
+}
+.name
+{
+padding: 10px;
+}
+.name h2{
+    font-size: 30px;
+}
+.name p{
+    font-size: 1.2rem;
+}
+#contact
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#contact h1{
+    margin: 50px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+#message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#submit{
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #000000dc;
+    color: yellowgreen;
+    border: none;
+    outline: none;
+}
+#submit:hover{
+    background-color:#5dbea3;
+    color: black;
+    cursor: pointer;
+    transition: .2s;
+}
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#project h1{
+    margin: 60px;
+}
+.colomn{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.box{
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2{
+    color: yellowgreen;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.box p{
+    font-size: 16px;
+    color: whitesmoke;
+}
